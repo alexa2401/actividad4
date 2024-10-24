@@ -1,4 +1,5 @@
-"""Flappy, game inspired by Flappy Bird.
+"""
+Flappy, game inspired by Flappy Bird.
 
 Exercises
 
@@ -8,8 +9,9 @@ Exercises
 4. Allow the bird to move forward and back.
 """
 
-from random import *
-from turtle import *
+from random import randrange
+from turtle import clear, goto, dot, update, ontimer
+from turtle import setup, hideturtle, up, tracer, onscreenclick, done
 
 from freegames import vector
 
@@ -74,6 +76,7 @@ def move():
     ontimer(move, 50)
 
 
+# Set up the screen
 setup(420, 420, 370, 0)
 hideturtle()
 up()
